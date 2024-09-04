@@ -11,5 +11,5 @@
       <class name="testscripts.ManageProduct_TestCase_Search"/>
       <class name="testscripts.AdminUser_TestCase_Delete"/>
     </classes>
-  </test> <!-- 7mart_Test1 -->
-</suite> <!-- Suite -->
+  </test> 
+</suite> 
