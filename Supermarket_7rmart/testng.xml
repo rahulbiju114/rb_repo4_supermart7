@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="7mart_Test1">
+    <classes>
+      <class name="testscripts.AdminUser_TestCase_ActiveButton"/>
+      <class name="testscripts.LoginPage_TestCase1"/>
+      <class name="testscripts.Category_TestCase"/>
+      <class name="testscripts.SubCategory_TestCase"/>
+      <class name="testscripts.ManageProduct_TestCase_Delete"/>
+      <class name="testscripts.ManageProduct_TestCase_Search"/>
+      <class name="testscripts.AdminUser_TestCase_Delete"/>
+    </classes>
+  </test> <!-- 7mart_Test1 -->
+</suite> <!-- Suite -->
