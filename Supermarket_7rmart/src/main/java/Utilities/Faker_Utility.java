@@ -1,5 +1,8 @@
 package Utilities;
 
+import com.github.javafaker.Address;
+import com.github.javafaker.Faker;
+
 public class Faker_Utility {
 	public String getFakeFirstName() {
 
