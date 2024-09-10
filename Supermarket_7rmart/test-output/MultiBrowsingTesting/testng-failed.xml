@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MultiBrowsingTesting]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="generateTestReport.Listners"/>
+  </listeners>
+  <test thread-count="5" name="Chrome Test(failed)">
+    <parameter name="password" value="admin"/>
+    <parameter name="Browser" value="Chrome"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="testscripts.LoginPage_TestCase1">
+        <methods>
+          <include name="enterValues3" invocation-numbers="0"/>
+          <include name="intializeMethod"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- testscripts.LoginPage_TestCase1 -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+  <test thread-count="5" name="Edge Test(failed)">
+    <parameter name="password" value="admin"/>
+    <parameter name="Browser" value="Edge"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="testscripts.LoginPage_TestCase1">
+        <methods>
+          <include name="enterValues3" invocation-numbers="0"/>
+          <include name="intializeMethod"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- testscripts.LoginPage_TestCase1 -->
+    </classes>
+  </test> <!-- Edge Test(failed) -->
+</suite> <!-- Failed suite [MultiBrowsingTesting] -->

@@ -18,18 +18,21 @@ public class AdminUsers_Page {
 	@FindBy(xpath = "(//a[@class='small-box-footer'])[1]")
 	WebElement locateAdminUser1;
 
-	public void clickAdminUser() {
+	public AdminUsers_Page clickAdminUser() {
 
 		locateAdminUser1.click();
+		return this;
 	}
 
 	@FindBy(xpath = "(//i[@class='fas fa-trash-alt'])[1]")
 	WebElement delete1;
 
-	public void deleteAdminUser() {
+	public Category_Page deleteAdminUser() {
 
 		delete1.click();
 		driver.switchTo().alert().accept();
+		return new Category_Page(driver);
+		
 	}
 
 	@FindBy(xpath = "(//i[@class='fa fa-unlock'])[1]")

@@ -17,26 +17,29 @@ public class LoginPage_Page {
 
 	@FindBy(xpath = "//input[@placeholder='Username']")
 	WebElement usname1;
-
-	public void enterUsname(String usnameA) {
+															//(1)
+	public LoginPage_Page enterUsname(String usnameA) {
 
 		usname1.sendKeys(usnameA);
+		return this;
 	}
 
 	@FindBy(xpath = "//input[@placeholder='Password']")
 	WebElement pass1;
-
-	public void enterPass(String passA) {
+															//(2)
+	public LoginPage_Page enterPass(String passA) {
 
 		pass1.sendKeys(passA);
+		return this;
 	}
 
 	@FindBy(xpath = "//button[@class='btn btn-dark btn-block']")
 	WebElement button1;
-
-	public void getClicked() {
+															//(3)
+	public AdminUsers_Page getClicked() {
 
 		button1.click();
+		return new AdminUsers_Page(driver);
 
 	}
 

@@ -21,41 +21,46 @@ public class Category_Page {
 	@FindBy(xpath = "(//a[@class='small-box-footer'])[3]")
 	WebElement locateCategory1;
 
-	public void clickCategory() {
+	public Category_Page clickCategory() {
 
 		locateCategory1.click();
+		return this;
 	}
 
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']")
 	WebElement new1;
 
-	public void clickNew() {
+	public Category_Page clickNew() {
 
 		new1.click();
+		return this;
 	}
 
 	@FindBy(xpath = "//input[@placeholder='Enter the Category']")
 	WebElement name1;
 
-	public void enterName(String categoryFiled) {
+	public Category_Page enterName(String categoryFiled) {
 
 		name1.sendKeys(categoryFiled);
+		return this;
 	}
 
 	@FindBy(xpath = "//li[@id='134-selectable']")
 	WebElement group1;
 
-	public void clickGroup() {
+	public Category_Page clickGroup() {
 
 		group1.click();
+		return this;
 	}
 
 	@FindBy(xpath = "//input[@name='main_img']")
 	WebElement image1;
 
-	public void chooseImage() {
+	public Category_Page chooseImage() {
 
 		image1.sendKeys("C:\\Users\\rahul\\Desktop\\img1.jpg");
+		return this;
 
 	}
 
@@ -63,10 +68,11 @@ public class Category_Page {
 	@FindBy(xpath = "//button[@name='create']")
 	WebElement save1;
 
-	public void clickSave() {
+	public SubCategory_Page clickSave() {
 
 		save1.click();
 		wt.waitforCategory(save1);
+		return new SubCategory_Page(driver);
 
 	}
 
