@@ -9,7 +9,7 @@ public class LoginPage_Page {
 
 	public WebDriver driver;
 
-	public LoginPage_Page(WebDriver driver) { // constructor
+	public LoginPage_Page(WebDriver driver) {
 
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -17,7 +17,7 @@ public class LoginPage_Page {
 
 	@FindBy(xpath = "//input[@placeholder='Username']")
 	WebElement usname1;
-															//(1)
+
 	public LoginPage_Page enterUsname(String usnameA) {
 
 		usname1.sendKeys(usnameA);
@@ -26,7 +26,7 @@ public class LoginPage_Page {
 
 	@FindBy(xpath = "//input[@placeholder='Password']")
 	WebElement pass1;
-															//(2)
+
 	public LoginPage_Page enterPass(String passA) {
 
 		pass1.sendKeys(passA);
@@ -35,14 +35,14 @@ public class LoginPage_Page {
 
 	@FindBy(xpath = "//button[@class='btn btn-dark btn-block']")
 	WebElement button1;
-															//(3)
+
 	public AdminUsers_Page getClicked() {
 
 		button1.click();
 		return new AdminUsers_Page(driver);
 
 	}
-	
+
 	@FindBy(xpath = "(//a[@class='small-box-footer'])[1]")
 	WebElement locateAdminUser1;
 

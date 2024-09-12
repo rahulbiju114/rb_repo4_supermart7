@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import utilities.Page_Utilites;
 
 public class SubCategory_Page {
@@ -46,7 +45,7 @@ public class SubCategory_Page {
 	}
 
 	@FindBy(xpath = "//input[@id='subcategory']")
-	WebElement enterSubCat1; 
+	WebElement enterSubCat1;
 
 	public SubCategory_Page enterSubCat(String subCategoryFiled) {
 
@@ -55,7 +54,7 @@ public class SubCategory_Page {
 	}
 
 	@FindBy(xpath = "//input[@name='main_img']")
-	WebElement image1; 
+	WebElement image1;
 
 	public SubCategory_Page chooseImage() {
 
@@ -64,7 +63,7 @@ public class SubCategory_Page {
 	}
 
 	@FindBy(xpath = "//button[@type='submit']")
-	WebElement save1; 
+	WebElement save1;
 
 	public ManageProduct_Page saveButton() {
 
@@ -73,7 +72,7 @@ public class SubCategory_Page {
 	}
 
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
-	WebElement alert1; 
+	WebElement alert1;
 
 	public boolean isAlertDisplayed() {
 

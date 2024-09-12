@@ -4,13 +4,13 @@
   <test thread-count="5" name="Chrome Test(failed)">
     <parameter name="Browser" value="Chrome"/>
     <classes>
-      <class name="testscripts.Category_TestCase">
+      <class name="testscripts.ManageProduct_TestCase_Delete">
         <methods>
           <include name="intializeMethod"/>
-          <include name="browserQuit"/>
           <include name="enterValues"/>
+          <include name="browserQuit"/>
         </methods>
-      </class> <!-- testscripts.Category_TestCase -->
+      </class> <!-- testscripts.ManageProduct_TestCase_Delete -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [ParallelTesting] -->

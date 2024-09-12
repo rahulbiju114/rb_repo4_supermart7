@@ -9,34 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">ParallelTesting</th></tr>
-<tr><td><a href="#t0">Chrome Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">12,726</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Chrome Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">7,276</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ParallelTesting</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrome Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testscripts.Category_TestCase</td><td><a href="#m0">enterValues</a></td><td rowspan="1">1726106899653</td><td rowspan="1">5353</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ParallelTesting</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrome Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testscripts.ManageProduct_TestCase_Delete</td><td><a href="#m0">enterValues</a></td><td rowspan="1">1726140224009</td><td rowspan="1">1632</td></tr></tbody>
 </table>
-<h2>Chrome Test</h2><h3 id="m0">testscripts.Category_TestCase#enterValues</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\Users\rahul\git\rb_repo4_supermart7\Supermarket_7rmart\src\test\resources\img1.jpg
-  (Session info: chrome=128.0.6613.121)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [07d88e218b5fe1d94852d2b738745e84, sendKeysToElement {id=f.BB3BEFA52555BC424C5488EF956BAEFC.d.4AA608AE53E18A1AC9FB7DF652F089E8.e.145, value=[Ljava.lang.CharSequence;@3cee53dc}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.121, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52667}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52667/devtoo..., se:cdpVersion: 128.0.6613.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (07d88e218b5fe1d94852d2b738745e84)] -&gt; xpath: //input[@name=&apos;main_img&apos;]]
-Session ID: 07d88e218b5fe1d94852d2b738745e84
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
-	at utilities.FileUpload_Utilities.uploadDiscountImageForManageCategory(FileUpload_Utilities.java:23)
-	at pages.Category_Page.chooseImage(Category_Page.java:65)
-	at testscripts.Category_TestCase.enterValues(Category_TestCase.java:36)
+<h2>Chrome Test</h2><h3 id="m0">testscripts.ManageProduct_TestCase_Delete#enterValues</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.getTagName()&quot; because &quot;element&quot; is null
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:43)
+	at pages.ManageProduct_Page.&lt;init&gt;(ManageProduct_Page.java:94)
+	at pages.AdminUsers_Page.getClickedLocate(AdminUsers_Page.java:80)
+	at testscripts.ManageProduct_TestCase_Delete.enterValues(ManageProduct_TestCase_Delete.java:22)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -7,7 +7,7 @@
 
 		<classes>
 			<!--<class name="testscripts.SubCategory_TestCase"></class>-->
-			<class name="testscripts.Category_TestCase"></class>
+			<class name="testscripts.ManageProduct_TestCase_Delete"></class>
 		</classes>
 	</test>
 

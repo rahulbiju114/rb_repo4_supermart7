@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-ParallelTesting">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ParallelTesting" title="testscripts.Category_TestCase" class="method navigator-link" hash-for-method="enterValues">enterValues</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ParallelTesting" title="testscripts.ManageProduct_TestCase_Delete" class="method navigator-link" hash-for-method="enterValues">enterValues</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-ParallelTesting -->
@@ -122,7 +122,7 @@
           <div class="suite-ParallelTesting-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testscripts.Category_TestCase</span>
+              <span class="class-name">testscripts.ManageProduct_TestCase_Delete</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -130,31 +130,13 @@
                   <a name="enterValues">
                   </a> <!-- enterValues -->
                   <span class="method-name">enterValues</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\Users\rahul\git\rb_repo4_supermart7\Supermarket_7rmart\src\test\resources\img1.jpg
-  (Session info: chrome=128.0.6613.121)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [07d88e218b5fe1d94852d2b738745e84, sendKeysToElement {id=f.BB3BEFA52555BC424C5488EF956BAEFC.d.4AA608AE53E18A1AC9FB7DF652F089E8.e.145, value=[Ljava.lang.CharSequence;@3cee53dc}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.121, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52667}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52667/devtoo..., se:cdpVersion: 128.0.6613.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (07d88e218b5fe1d94852d2b738745e84)] -&gt; xpath: //input[@name=&apos;main_img&apos;]]
-Session ID: 07d88e218b5fe1d94852d2b738745e84
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
-	at utilities.FileUpload_Utilities.uploadDiscountImageForManageCategory(FileUpload_Utilities.java:23)
-	at pages.Category_Page.chooseImage(Category_Page.java:65)
-	at testscripts.Category_TestCase.enterValues(Category_TestCase.java:36)
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.getTagName()&quot; because &quot;element&quot; is null
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:43)
+	at pages.ManageProduct_Page.&lt;init&gt;(ManageProduct_Page.java:94)
+	at pages.AdminUsers_Page.getClickedLocate(AdminUsers_Page.java:80)
+	at testscripts.ManageProduct_TestCase_Delete.enterValues(ManageProduct_TestCase_Delete.java:22)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -173,7 +155,7 @@ Session ID: 07d88e218b5fe1d94852d2b738745e84
   &lt;test thread-count=&quot;5&quot; name=&quot;Chrome Test&quot;&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testscripts.Category_TestCase&quot;/&gt;
+      &lt;class name=&quot;testscripts.ManageProduct_TestCase_Delete&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Chrome Test --&gt;
 &lt;/suite&gt; &lt;!-- ParallelTesting --&gt;
@@ -216,13 +198,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'enterValues')
-data.setCell(0, 2, 'testscripts.Category_TestCase')
-data.setCell(0, 3, 5353);
+data.setCell(0, 2, 'testscripts.ManageProduct_TestCase_Delete')
+data.setCell(0, 3, 1632);
 window.suiteTableData['ParallelTesting']= { tableData: data, tableDiv: 'times-div-ParallelTesting'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-ParallelTesting">
               </div> <!-- times-div-ParallelTesting -->
             </div> <!-- times-div -->
@@ -248,7 +230,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testscripts.Category_TestCase</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testscripts.ManageProduct_TestCase_Delete</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">intializeMethod(Chrome)</span>
                 <span class="method-start">0 ms</span>
@@ -257,11 +239,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">enterValues</span>
-                <span class="method-start">6373 ms</span>
+                <span class="method-start">5359 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=enterValues status=FAILURE method=Category_TestCase.enterValues()[pri:0, instance:t...)</span>
-                <span class="method-start">11751 ms</span>
+                <span class="method-name">browserQuit([TestResult name=enterValues status=FAILURE method=ManageProduct_TestCase_Delete.enterValues()[pri:0...)</span>
+                <span class="method-start">7000 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

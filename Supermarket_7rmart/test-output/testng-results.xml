@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-12T07:38:13 IST" name="ParallelTesting" finished-at="2024-09-12T07:38:25 IST" duration-ms="12726">
+  <suite started-at="2024-09-12T16:53:38 IST" name="ParallelTesting" finished-at="2024-09-12T16:53:45 IST" duration-ms="7276">
     <groups>
     </groups>
-    <test started-at="2024-09-12T07:38:13 IST" name="Chrome Test" finished-at="2024-09-12T07:38:25 IST" duration-ms="12726">
-      <class name="testscripts.Category_TestCase">
-        <test-method is-config="true" signature="intializeMethod(java.lang.String)[pri:0, instance:testscripts.Category_TestCase@6dc17b83]" started-at="2024-09-12T07:38:13 IST" name="intializeMethod" finished-at="2024-09-12T07:38:19 IST" duration-ms="6371" status="PASS">
+    <test started-at="2024-09-12T16:53:38 IST" name="Chrome Test" finished-at="2024-09-12T16:53:45 IST" duration-ms="7276">
+      <class name="testscripts.ManageProduct_TestCase_Delete">
+        <test-method is-config="true" signature="intializeMethod(java.lang.String)[pri:0, instance:testscripts.ManageProduct_TestCase_Delete@6dc17b83]" started-at="2024-09-12T16:53:38 IST" name="intializeMethod" finished-at="2024-09-12T16:53:44 IST" duration-ms="5358" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,52 +18,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeMethod -->
-        <test-method signature="enterValues()[pri:0, instance:testscripts.Category_TestCase@6dc17b83]" started-at="2024-09-12T07:38:19 IST" name="enterValues" finished-at="2024-09-12T07:38:25 IST" duration-ms="5353" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidArgumentException">
+        <test-method signature="enterValues()[pri:0, instance:testscripts.ManageProduct_TestCase_Delete@6dc17b83]" started-at="2024-09-12T16:53:44 IST" name="enterValues" finished-at="2024-09-12T16:53:45 IST" duration-ms="1632" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[invalid argument: File not found : C:\Users\rahul\git\rb_repo4_supermart7\Supermarket_7rmart\src\test\resources\img1.jpg
-  (Session info: chrome=128.0.6613.121)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [07d88e218b5fe1d94852d2b738745e84, sendKeysToElement {id=f.BB3BEFA52555BC424C5488EF956BAEFC.d.4AA608AE53E18A1AC9FB7DF652F089E8.e.145, value=[Ljava.lang.CharSequence;@3cee53dc}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.121, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52667}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52667/devtoo..., se:cdpVersion: 128.0.6613.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (07d88e218b5fe1d94852d2b738745e84)] -> xpath: //input[@name='main_img']]
-Session ID: 07d88e218b5fe1d94852d2b738745e84]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.getTagName()" because "element" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\Users\rahul\git\rb_repo4_supermart7\Supermarket_7rmart\src\test\resources\img1.jpg
-  (Session info: chrome=128.0.6613.121)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [07d88e218b5fe1d94852d2b738745e84, sendKeysToElement {id=f.BB3BEFA52555BC424C5488EF956BAEFC.d.4AA608AE53E18A1AC9FB7DF652F089E8.e.145, value=[Ljava.lang.CharSequence;@3cee53dc}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.121, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52667}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52667/devtoo..., se:cdpVersion: 128.0.6613.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (07d88e218b5fe1d94852d2b738745e84)] -> xpath: //input[@name='main_img']]
-Session ID: 07d88e218b5fe1d94852d2b738745e84
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
-at utilities.FileUpload_Utilities.uploadDiscountImageForManageCategory(FileUpload_Utilities.java:23)
-at pages.Category_Page.chooseImage(Category_Page.java:65)
-at testscripts.Category_TestCase.enterValues(Category_TestCase.java:36)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.getTagName()" because "element" is null
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:43)
+at pages.ManageProduct_Page.<init>(ManageProduct_Page.java:94)
+at pages.AdminUsers_Page.getClickedLocate(AdminUsers_Page.java:80)
+at testscripts.ManageProduct_TestCase_Delete.enterValues(ManageProduct_TestCase_Delete.java:22)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -94,22 +59,22 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterValues -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.Category_TestCase@6dc17b83]" started-at="2024-09-12T07:38:25 IST" name="browserQuit" finished-at="2024-09-12T07:38:25 IST" duration-ms="891" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscripts.ManageProduct_TestCase_Delete@6dc17b83]" started-at="2024-09-12T16:53:45 IST" name="browserQuit" finished-at="2024-09-12T16:53:45 IST" duration-ms="241" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=enterValues status=FAILURE method=Category_TestCase.enterValues()[pri:0, instance:testscripts.Category_TestCase@6dc17b83] output={null}]]]>
+                <![CDATA[[TestResult name=enterValues status=FAILURE method=ManageProduct_TestCase_Delete.enterValues()[pri:0, instance:testscripts.ManageProduct_TestCase_Delete@6dc17b83] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- testscripts.Category_TestCase -->
+      </class> <!-- testscripts.ManageProduct_TestCase_Delete -->
     </test> <!-- Chrome Test -->
   </suite> <!-- ParallelTesting -->
 </testng-results>

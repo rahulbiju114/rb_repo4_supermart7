@@ -32,7 +32,7 @@ public class AdminUsers_Page {
 		delete1.click();
 		driver.switchTo().alert().accept();
 		return new AdminUsers_Page(driver);
-		
+
 	}
 
 	@FindBy(xpath = "(//i[@class='fa fa-unlock'])[1]")
@@ -44,7 +44,7 @@ public class AdminUsers_Page {
 		return new Category_Page(driver);
 
 	}
-	
+
 	@FindBy(xpath = "(//a[@class='small-box-footer'])[3]")
 	WebElement locateCategory1;
 
@@ -60,6 +60,25 @@ public class AdminUsers_Page {
 	public boolean isAlertDisplayed() {
 
 		return alert1.isDisplayed();
+	}
+
+	@FindBy(xpath = "(//a[@class='small-box-footer'])[4]")
+	WebElement locateSubCategory1;
+
+	public SubCategory_Page clickSubCategory() {
+
+		locateSubCategory1.click();
+		return new SubCategory_Page(driver);
+	}
+
+	@FindBy(xpath = "(//a[@class='small-box-footer'])[8]")
+	WebElement mp1;
+
+	public ManageProduct_Page getClickedLocate() {
+
+		mp1.click();
+		return new ManageProduct_Page(driver);
+
 	}
 
 }

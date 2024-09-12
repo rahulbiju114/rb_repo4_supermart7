@@ -15,7 +15,7 @@ public class ManageProduct_Page {
 
 	public WebDriver driver;
 
-	public ManageProduct_Page(WebDriver driver) { 
+	public ManageProduct_Page(WebDriver driver) {
 
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -26,19 +26,21 @@ public class ManageProduct_Page {
 	@FindBy(xpath = "(//a[@class='small-box-footer'])[8]")
 	WebElement mp1;
 
-	public void getClickedLocate() {
+	public ManageProduct_Page getClickedLocate() {
 		wait.until(ExpectedConditions.elementToBeClickable(mp1));
 
 		mp1.click();
+		return this;
 
 	}
 
-	@FindBy(xpath = "//i[@class='fas fa-trash-alt']")
+	@FindBy(xpath = "(//a[@class='btn btn-sm btn btn-danger btncss'])[1]")
 	WebElement delete1;
 
-	public void getClickedDelete() {
+	public ManageProduct_Page getClickedDelete() {
 		delete1.click();
 		driver.switchTo().alert().accept();
+		return new ManageProduct_Page(driver);
 	}
 
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
@@ -52,53 +54,59 @@ public class ManageProduct_Page {
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-primary']")
 	WebElement search1;
 
-	public void getClicked_SearchButton() {
+	public ManageProduct_Page getClicked_SearchButton() {
 		search1.click();
+		return this;
 
 	}
 
 	@FindBy(xpath = "//input[@name='un']")
 	WebElement title1;
 
-	public void enterTitle(String title2) {
+	public ManageProduct_Page enterTitle(String title2) {
 
 		title1.sendKeys(title2);
+		return this;
 
 	}
 
 	@FindBy(xpath = "//input[@name='cd']")
 	WebElement proCode1;
 
-	public void enterProductCode(String proCode2) {
+	public ManageProduct_Page enterProductCode(String proCode2) {
 
 		proCode1.sendKeys(proCode2);
+		return this;
 	}
 
 	@FindBy(xpath = "//option[@value='257']")
 	WebElement category1;
 
-	public void clickCategory() {
+	public ManageProduct_Page clickCategory() {
 
 		category1.click();
-		;
+		return this;
+
 	}
 
 	@FindBy(xpath = "//select[@id='sb']")
 	WebElement subCategory1;
 	Select s1 = new Select(subCategory1);
 
-	public void clickSubCategory() {
+	public ManageProduct_Page clickSubCategory() {
 
 		s1.selectByIndex(2);
+		return this;
 	}
 
 	@FindBy(xpath = "//button[@value='sr']")
 	WebElement srchBut1;
 
-	public void clickSearchButton() {
+	public ManageProduct_Page clickSearchButton() {
 
 		srchBut1.click();
-		;
+		return new ManageProduct_Page(driver);
+
 	}
 
 	@FindBy(xpath = "//center[text()='.........RESULT NOT FOUND.......']")
@@ -109,9 +117,10 @@ public class ManageProduct_Page {
 		return serchAssert.isDisplayed();
 	}
 
-	public void scrollDown1() {
+	public ManageProduct_Page scrollDown1() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,650)");
+		return this;
 	}
 
 }

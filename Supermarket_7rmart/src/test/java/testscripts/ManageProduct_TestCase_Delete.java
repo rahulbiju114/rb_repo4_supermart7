@@ -8,6 +8,9 @@ import pages.LoginPage_Page;
 import pages.ManageProduct_Page;
 
 public class ManageProduct_TestCase_Delete extends BaseClass {
+	
+	public LoginPage_Page login;
+	public ManageProduct_Page mp1;
 
 	@Test
 	public void enterValues() {
@@ -15,16 +18,10 @@ public class ManageProduct_TestCase_Delete extends BaseClass {
 		String uA1 = "admin";
 		String pA1 = "admin";
 
-		LoginPage_Page p1 = new LoginPage_Page(driver);
-		p1.enterUsname(uA1);
-		p1.enterPass(pA1);
-		p1.getClicked();
+		login = new LoginPage_Page(driver);
+		mp1 = login.enterUsname(uA1).enterPass(pA1).getClicked().getClickedLocate().getClickedDelete();
 
-		ManageProduct_Page p2 = new ManageProduct_Page(driver);
-		p2.getClickedLocate();
-		p2.getClickedDelete();
-
-		boolean isDeleteAlert1 = p2.isDeleteAlert();
+		boolean isDeleteAlert1 = mp1.isDeleteAlert();
 		assertTrue(isDeleteAlert1, "Alert not loaded");
 
 	}
