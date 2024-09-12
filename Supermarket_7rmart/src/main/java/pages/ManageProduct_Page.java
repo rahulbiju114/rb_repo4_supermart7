@@ -105,7 +105,7 @@ public class ManageProduct_Page {
 	public ManageProduct_Page clickSearchButton() {
 
 		srchBut1.click();
-		return new ManageProduct_Page(driver);
+		return this;
 
 	}
 
