@@ -1,4 +1,4 @@
-package Constants;
+package constants;
 
 public class Constants {
 
@@ -24,5 +24,7 @@ public class Constants {
 			+ "\\src\\test\\resources\\CatSubField.xlsx";
 
 	public static final String CONSTFILE = System.getProperty("user.dir") + "\\src\\test\\resources\\config.properties";
+
+	public static final String DISCOUNTIMAGE = System.getProperty("user.dir") + "\\src\\test\\resources\\img1.jpg";
 
 }

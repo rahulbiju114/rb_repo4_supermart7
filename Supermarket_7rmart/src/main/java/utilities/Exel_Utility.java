@@ -1,4 +1,4 @@
-package Utilities;
+package utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import Constants.Constants;
+import constants.Constants;
 
 public class Exel_Utility {
 

@@ -6,11 +6,11 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-import Constants.Constants;
-import Pages.AdminUsers_Page;
-import Pages.Category_Page;
-import Pages.LoginPage_Page;
-import Utilities.Exel_Utility;
+import constants.Constants;
+import pages.AdminUsers_Page;
+import pages.Category_Page;
+import pages.LoginPage_Page;
+import utilities.Exel_Utility;
 
 public class AdminUser_TestCase_Delete extends BaseClass {
 	
@@ -29,16 +29,16 @@ public class AdminUser_TestCase_Delete extends BaseClass {
 //		p1.enterPass(pA1);
 //		p1.getClicked();
 		
-		login = new LoginPage_Page(driver);
-		admin = login.enterUsname(pA1).enterPass(uA1).getClicked();
-		
+	login = new LoginPage_Page(driver);
+//	admin = login.enterUsname(pA1).enterPass(uA1).getClicked();
+	admin = login.enterUsname(pA1).enterPass(uA1).getClicked().clickAdminUser().deleteAdminUser();	
 		
 //		AdminUsers_Page admin1 = new AdminUsers_Page(driver);
 //		admin1.clickAdminUser();
 //		admin1.deleteAdminUser();
 
-		admin = new AdminUsers_Page(driver);
-		cat = admin.clickAdminUser().deleteAdminUser();
+		
+//		cat = admin.clickAdminUser().deleteAdminUser();
 		
 		boolean isAlert = admin.isAlertDisplayed();
 		assertTrue(isAlert, Constants.ERRORFORADMINUSERALERTDELETE);

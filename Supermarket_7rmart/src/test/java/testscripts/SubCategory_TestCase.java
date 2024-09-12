@@ -6,10 +6,10 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-import Constants.Constants;
-import Pages.LoginPage_Page;
-import Pages.SubCategory_Page;
-import Utilities.Exel_Utility;
+import constants.Constants;
+import pages.LoginPage_Page;
+import pages.SubCategory_Page;
+import utilities.Exel_Utility;
 
 public class SubCategory_TestCase extends BaseClass {
 	  @Test

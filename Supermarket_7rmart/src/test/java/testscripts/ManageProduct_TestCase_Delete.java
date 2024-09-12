@@ -4,8 +4,8 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.Test;
 
-import Pages.LoginPage_Page;
-import Pages.ManageProduct_Page;
+import pages.LoginPage_Page;
+import pages.ManageProduct_Page;
 
 public class ManageProduct_TestCase_Delete extends BaseClass {
 

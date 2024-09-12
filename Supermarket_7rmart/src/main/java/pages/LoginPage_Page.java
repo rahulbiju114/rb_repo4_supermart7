@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -41,6 +41,15 @@ public class LoginPage_Page {
 		button1.click();
 		return new AdminUsers_Page(driver);
 
+	}
+	
+	@FindBy(xpath = "(//a[@class='small-box-footer'])[1]")
+	WebElement locateAdminUser1;
+
+	public AdminUsers_Page clickAdminUser() {
+
+		locateAdminUser1.click();
+		return new AdminUsers_Page(driver);
 	}
 
 	@FindBy(xpath = "//p[text()='Dashboard']")

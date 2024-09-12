@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,21 +27,31 @@ public class AdminUsers_Page {
 	@FindBy(xpath = "(//i[@class='fas fa-trash-alt'])[1]")
 	WebElement delete1;
 
-	public Category_Page deleteAdminUser() {
+	public AdminUsers_Page deleteAdminUser() {
 
 		delete1.click();
 		driver.switchTo().alert().accept();
-		return new Category_Page(driver);
+		return new AdminUsers_Page(driver);
 		
 	}
 
 	@FindBy(xpath = "(//i[@class='fa fa-unlock'])[1]")
 	WebElement active1;
 
-	public void clickActiveButton() {
+	public Category_Page clickActiveButton() {
 
 		active1.click();
+		return new Category_Page(driver);
 
+	}
+	
+	@FindBy(xpath = "(//a[@class='small-box-footer'])[3]")
+	WebElement locateCategory1;
+
+	public Category_Page clickCategory() {
+
+		locateCategory1.click();
+		return new Category_Page(driver);
 	}
 
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")

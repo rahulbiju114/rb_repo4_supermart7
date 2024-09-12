@@ -8,9 +8,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import Constants.Constants;
-import Pages.LoginPage_Page;
-import Utilities.Exel_Utility;
+import constants.Constants;
+import pages.LoginPage_Page;
+import utilities.Exel_Utility;
 
 public class LoginPage_TestCase1 extends BaseClass {
 

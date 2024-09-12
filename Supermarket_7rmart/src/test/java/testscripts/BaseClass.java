@@ -13,8 +13,9 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-import Constants.Constants;
-import Utilities.Screenshot_Utility;
+
+import constants.Constants;
+import utilities.Screenshot_Utility;
 
 public class BaseClass {
 	public WebDriver driver;

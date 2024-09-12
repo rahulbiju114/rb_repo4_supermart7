@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Grouping]" guice-stage="DEVELOPMENT">
+  <parameter name="Browser" value="Chrome"/>
+  <listeners>
+    <listener class-name="generateTestReport.Listners"/>
+  </listeners>
+  <test thread-count="5" name="Grouping(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testscripts.AdminUser_TestCase_ActiveButton">
+        <methods>
+          <include name="intializeMethod"/>
+          <include name="enterValues"/>
+        </methods>
+      </class> <!-- testscripts.AdminUser_TestCase_ActiveButton -->
+    </classes>
+  </test> <!-- Grouping(failed) -->
+</suite> <!-- Failed suite [Grouping] -->

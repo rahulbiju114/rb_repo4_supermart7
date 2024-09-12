@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -6,7 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import Utilities.Wait_Utilities;
+import constants.Constants;
+import utilities.FileUpload_Utilities;
+import utilities.Wait_Utilities;
 
 public class Category_Page {
 
@@ -58,8 +60,9 @@ public class Category_Page {
 	WebElement image1;
 
 	public Category_Page chooseImage() {
+		FileUpload_Utilities fileupload = new FileUpload_Utilities();
 
-		image1.sendKeys("C:\\Users\\rahul\\Desktop\\img1.jpg");
+		fileupload.uploadDiscountImageForManageCategory(image1, Constants.DISCOUNTIMAGE);
 		return this;
 
 	}
